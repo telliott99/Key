@@ -1,0 +1,19 @@
+> swiftc Key.swift BinaryData.swift main.swift -o prog -F ~/Library/Frameworks -sdk $(xcrun --show-sdk-path --sdk macosx) -target x86_64-apple-macosx10.12  && ./prog
+test Key
+pw:   my secret
+data: 0x
+salt: 0x
+
+pw: my secret
+salt: 0x042164b49dc9
+pw:   my secret
+data: 0x66cd9f4dcc1ece970b7ed1749c0c1beeef34b1f2
+salt: 0x042164b49dc9
+
+pw: my secret
+salt: 0x042164b49dc9
+pw:   my secret
+data: 0x66cd9f4dcc1ece970b7ed1749c0c1beeef34b1f2
+salt: 0x042164b49dc9
+
+>
